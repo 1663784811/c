@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    Project/STM32F10x_StdPeriph_Template/stm32f10x_conf.h 
+  * @file    I2C/IOExpander/stm32f10x_conf.h 
   * @author  MCD Application Team
   * @version V3.6.0
   * @date    20-September-2021
