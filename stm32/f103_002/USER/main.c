@@ -20,6 +20,8 @@ void usartOut(void);
  * =============================    主启动类
  */
 int main(void) {
+	
+	 //board_init();
 
     usartOut();
 
@@ -47,12 +49,10 @@ void usartOut(void) {
     // 模式
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 
-
-
-    /* Enable GPIO clock */
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO, ENABLE);
-    /* Enable UART clock */
-    RCC_APB2PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+    /* Enable GPIO clock   开启GPIO 时钟 */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 | RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO, ENABLE);
+    /* Enable UART clock   开启串口 时钟 */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
 
 
     /* Configure USART Tx as alternate function push-pull */
