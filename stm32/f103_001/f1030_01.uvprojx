@@ -325,7 +325,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>3</v6Lang>
@@ -537,6 +537,26 @@
               <FileName>stm32f10x_conf.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\USER\stm32f10x_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>test001.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\test001.c</FilePath>
+            </File>
+            <File>
+              <FileName>test001.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USER\test001.h</FilePath>
+            </File>
+            <File>
+              <FileName>test002.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USER\test002.h</FilePath>
+            </File>
+            <File>
+              <FileName>test002.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\test002.c</FilePath>
             </File>
           </Files>
         </Group>

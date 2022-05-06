@@ -48,30 +48,62 @@
   
 typedef struct
 {
-  uint32_t USART_BaudRate;            /*!< This member configures the USART communication baud rate.
-                                           The baud rate is computed using the following formula:
-                                            - IntegerDivider = ((PCLKx) / (16 * (USART_InitStruct->USART_BaudRate)))
-                                            - FractionalDivider = ((IntegerDivider - ((u32) IntegerDivider)) * 16) + 0.5 */
+    /**
+     * !< This member configures the USART communication baud rate.
+     The baud rate is computed using the following formula:
+      - IntegerDivider = ((PCLKx) / (16 * (USART_InitStruct->USART_BaudRate)))
+      - FractionalDivider = ((IntegerDivider - ((u32) IntegerDivider)) * 16) + 0.5
 
-  uint16_t USART_WordLength;          /*!< Specifies the number of data bits transmitted or received in a frame.
-                                           This parameter can be a value of @ref USART_Word_Length */
+      该成员配置 USART 通信波特率。波特率使用以下公式计算：
+      - IntegerDivider = ((PCLKx) (16 (USART_InitStruct->USART_BaudRate))) - FractionalDivider = ((IntegerDivider - ((u32) IntegerDivider)) 16) + 0.5
+      **/
+  uint32_t USART_BaudRate;
 
-  uint16_t USART_StopBits;            /*!< Specifies the number of stop bits transmitted.
-                                           This parameter can be a value of @ref USART_Stop_Bits */
+    /**
+     * !<
+     * Specifies the number of data bits transmitted or received in a frame.
+      This parameter can be a value of @ref USART_Word_Length
+      指定帧中传输或接收的数据位数。该参数可以是@ref USART_Word_Length 的值
+      */
+  uint16_t USART_WordLength;
 
-  uint16_t USART_Parity;              /*!< Specifies the parity mode.
-                                           This parameter can be a value of @ref USART_Parity
-                                           @note When parity is enabled, the computed parity is inserted
-                                                 at the MSB position of the transmitted data (9th bit when
-                                                 the word length is set to 9 data bits; 8th bit when the
-                                                 word length is set to 8 data bits). */
- 
-  uint16_t USART_Mode;                /*!< Specifies wether the Receive or Transmit mode is enabled or disabled.
-                                           This parameter can be a value of @ref USART_Mode */
+    /**
+     * !< Specifies the number of stop bits transmitted.
+      This parameter can be a value of @ref USART_Stop_Bits
+     指定传输的停止位数。
+     此参数可以是 @ref USART_Stop_Bits 的值
+    */
+  uint16_t USART_StopBits;
 
-  uint16_t USART_HardwareFlowControl; /*!< Specifies wether the hardware flow control mode is enabled
-                                           or disabled.
-                                           This parameter can be a value of @ref USART_Hardware_Flow_Control */
+    /**
+      !< Specifies the parity mode.
+       This parameter can be a value of @ref USART_Parity
+       @note When parity is enabled, the computed parity is inserted
+             at the MSB position of the transmitted data (9th bit when
+             the word length is set to 9 data bits; 8th bit when the
+             word length is set to 8 data bits).
+         指定奇偶校验模式。
+         该参数可以是@ref USART_Parity
+         @note 启用奇偶校验时，
+         计算出的奇偶校验插入到传输数据的 MSB 位置
+         （字长设置为 9 个数据位时为第 9 位；字长设置为第 8 位设置为 8 个数据位）
+     */
+  uint16_t USART_Parity;
+
+    /*!< Specifies wether the Receive or Transmit mode is enabled or disabled.
+       This parameter can be a value of @ref USART_Mode
+       指定接收或发送模式是启用还是禁用。
+       该参数可以是@ref USART_Mode 的值
+       */
+  uint16_t USART_Mode;
+    /*!<
+     * Specifies wether the hardware flow control mode is enabled
+           or disabled.
+           This parameter can be a value of @ref USART_Hardware_Flow_Control
+           指定是启用还是禁用硬件流控制模式。
+           该参数可以是@ref USART 硬件流控制的值
+   */
+  uint16_t USART_HardwareFlowControl;
 } USART_InitTypeDef;
 
 /** 

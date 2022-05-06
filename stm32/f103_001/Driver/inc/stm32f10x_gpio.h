@@ -68,14 +68,23 @@ typedef enum
   */
 
 typedef enum
-{ GPIO_Mode_AIN = 0x0,
-  GPIO_Mode_IN_FLOATING = 0x04,
-  GPIO_Mode_IPD = 0x28,
-  GPIO_Mode_IPU = 0x48,
-  GPIO_Mode_Out_OD = 0x14,
-  GPIO_Mode_Out_PP = 0x10,
-  GPIO_Mode_AF_OD = 0x1C,
-  GPIO_Mode_AF_PP = 0x18
+{
+    //    （1）GPIO_Mode_AIN 模拟输入
+    //    （2）GPIO_Mode_IN_FLOATING 浮空输入
+    //    （3）GPIO_Mode_IPD 下拉输入
+    //    （4）GPIO_Mode_IPU 上拉输入
+    //    （5）GPIO_Mode_Out_OD 开漏输出
+    //    （6）GPIO_Mode_Out_PP 推挽输出
+    //    （7）GPIO_Mode_AF_OD 复用开漏输出
+    //    （8）GPIO_Mode_AF_PP 复用推挽输出
+    GPIO_Mode_AIN = 0x0,
+    GPIO_Mode_IN_FLOATING = 0x04,
+    GPIO_Mode_IPD = 0x28,
+    GPIO_Mode_IPU = 0x48,
+    GPIO_Mode_Out_OD = 0x14,
+    GPIO_Mode_Out_PP = 0x10,
+    GPIO_Mode_AF_OD = 0x1C,
+    GPIO_Mode_AF_PP = 0x18
 }GPIOMode_TypeDef;
 
 #define IS_GPIO_MODE(MODE) (((MODE) == GPIO_Mode_AIN) || ((MODE) == GPIO_Mode_IN_FLOATING) || \
