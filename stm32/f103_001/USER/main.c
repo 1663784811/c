@@ -6,8 +6,11 @@ int main(void){
 
     // LED 灯
     // test001();
-		test002();
-	
+
+    // 串口
+    test002();
+
+
 	
     
 }
