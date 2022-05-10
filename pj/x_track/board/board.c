@@ -85,7 +85,10 @@ void IncTick(void)
 */
 void board_init(void)
 {
-  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4); //中断分组4，只有抢占优先级
+    /**
+     * 中断分组4，只有抢占优先级
+     */
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 
   set_board_systick();
   softdelay_calibrate();

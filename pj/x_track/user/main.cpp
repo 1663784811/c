@@ -59,6 +59,9 @@
   */
 int main(void)
 {
+    /**
+     * MCU×îµ×²ã³õÊ¼»¯
+     */
   board_init();
   
   dbg_init(USART1);
