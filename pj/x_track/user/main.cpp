@@ -63,15 +63,28 @@ int main(void)
      * MCU最底层初始化
      */
   board_init();
-  
+
+  /**
+   * 调试串口初始化
+   */
   dbg_init(USART1);
-  
+
+  /**
+   * SD卡初始化
+   */
   drv_sdio_sd_init();
-  
+
+  /**
+   * sdram初始化
+   */
   Drv_SDRAM_Init();
-  
+
+  /**
+   * 进入临界段
+   */
   taskENTER_CRITICAL();
-  
+
+  // ===============================================================   任务
   xTaskCreate(task_monitor,  "MONITOR", 600, NULL, 7, NULL);
   
   xTaskCreate(task_lvgl,     "LVGL",   1850, NULL, 6, NULL);
@@ -81,9 +94,17 @@ int main(void)
   xTaskCreate(task_led,      "LED",     100, NULL, 3, NULL);
 
   xTaskCreate(task_gps,      "GPS",     500, NULL, 3, NULL);
-  
+
+  // ==============================================================
+
+  /**
+   * 退出临界段
+   */
   taskEXIT_CRITICAL();
-  
+
+  /**
+   * 启动实时内核处理
+   */
   vTaskStartScheduler();
   
   /* Infinite loop */

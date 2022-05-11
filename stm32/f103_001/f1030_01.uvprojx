@@ -560,6 +560,46 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>usart</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usart\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>com_x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usart\com_x.c</FilePath>
+            </File>
+            <File>
+              <FileName>debug_x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usart\debug_x.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\usart\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>com_x.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\usart\com_x.h</FilePath>
+            </File>
+            <File>
+              <FileName>debug_x.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\usart\debug_x.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\usart\delay.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

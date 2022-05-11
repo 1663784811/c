@@ -22,7 +22,7 @@ void test002(void){
 	USART_Config(UsartN,baudrate,Ppro,Spro);
 
     while (1){
-        Usart_SendByte( USART1_BASE, 'c');
+        //Usart_SendByte( USART1_BASE, 'c');
     }
 }
 

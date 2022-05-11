@@ -11,11 +11,8 @@
 static __IO uint32_t usTicks;
 static __IO uint16_t		msTicks=0;
 // SysTick_Handler function will be called every 1 us
-void SysTick_Handler()
-{
-
-	if (usTicks != 0)
-	{
+void SysTick_Handler(){
+	if (usTicks != 0){
 			usTicks--;
 			msTicks++;
 	}
@@ -26,11 +23,9 @@ void SysTick_Handler()
 		msTicks = 0;
 		debug_x_usart_dma_ctl(); 
 	}
-	
 }
 //≈‰÷√sysTick÷–∂œº‰∏ÙŒ™1us
-void delay_init(void)
-{
+void delay_init(void){
 	// Update SystemCoreClock value
 	SystemCoreClockUpdate();
 	// Configure the SysTick timer to overflow every 1 us
@@ -39,8 +34,7 @@ void delay_init(void)
 	//SysTick_Config(SystemCoreClock / 1000);
 }
 
-void delay_us(u32 us)
-{
+void delay_us(u32 us){
   // Reload us value
     usTicks = us;
     // Wait until usTick reach zero
@@ -48,11 +42,10 @@ void delay_us(u32 us)
 }
 
 
-void delay_ms(u16 ms)
-{
+void delay_ms(u16 ms){
 	// Wait until ms reach zero
 	while (ms--)
-	{
+		{
 	// Delay 1ms
 	delay_us(1000);
 	}
