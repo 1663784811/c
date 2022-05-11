@@ -85,14 +85,16 @@ int main(void)
   taskENTER_CRITICAL();
 
   // ===============================================================   任务
-  xTaskCreate(task_monitor,  "MONITOR", 600, NULL, 7, NULL);
-  
-  xTaskCreate(task_lvgl,     "LVGL",   1850, NULL, 6, NULL);
-  
-  xTaskCreate(task_key,      "KEY",     100, NULL, 4, NULL);
-  
-  xTaskCreate(task_led,      "LED",     100, NULL, 3, NULL);
 
+  // 监测任务,查看其它任务的数据,用于调试
+  xTaskCreate(task_monitor,  "MONITOR", 600, NULL, 7, NULL);
+  // 开源轻量级显示框架
+  xTaskCreate(task_lvgl,     "LVGL",   1850, NULL, 6, NULL);
+  //
+  xTaskCreate(task_key,      "KEY",     100, NULL, 4, NULL);
+  // led
+  xTaskCreate(task_led,      "LED",     100, NULL, 3, NULL);
+  // GPS
   xTaskCreate(task_gps,      "GPS",     500, NULL, 3, NULL);
 
   // ==============================================================
