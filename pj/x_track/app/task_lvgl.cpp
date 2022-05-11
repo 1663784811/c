@@ -40,24 +40,23 @@
 * None
 * @retval  开源轻量级显示框架
 *****************************************************************************/
-void task_lvgl(void *arg)
-{
-  lv_init();
-  
-  lv_port_disp_init();
-  
-  lv_port_indev_init();
-  
-  lv_port_fs_init();
-  
-  App_Init();
-  
+void task_lvgl(void *arg) {
+    // 初始化
+    lv_init();
+
+    lv_port_disp_init();
+
+    lv_port_indev_init();
+
+    lv_port_fs_init();
+
+    App_Init();
+
 //  lv_demo_widgets();
 //  lv_demo_keypad_encoder();
-  
-  while (1)
-  {
-    lv_task_handler();
-    vTaskDelay(5);
-  }
+
+    while (1) {
+        lv_task_handler();
+        vTaskDelay(5);
+    }
 }
