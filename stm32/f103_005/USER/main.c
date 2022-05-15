@@ -10,9 +10,9 @@ int main(void){
     // test001();
 
     // 串口
-    test002();
+    // test002();
 
-
+		
 	
     
 }
