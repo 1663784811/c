@@ -21,28 +21,28 @@ Communication Port:
 #include "string.h"
 
 /**********************************************************************************************************************/
-int main(void)
-{
-	
-	
-	delay_init(); 
-	
-	com_x_usart_Init();
-	
-	debug_x_usart_Init();
-	
-	delay_ms(1000);
-	
-	printf("\n\r--------------mobilebase测试---------------------\n ");
-	
-	while (1)
-	{
-		
-		printf("\n\r--------------数据发送---------------------\n ");
-		
-		data_pack();
-		
-		delay_ms(1000);
-		
-	}
-}
+//int main(void)
+//{
+//
+//
+//	delay_init();
+//
+//	com_x_usart_Init();
+//
+//	debug_x_usart_Init();
+//
+//	delay_ms(1000);
+//
+//	printf("\n\r--------------mobilebase测试---------------------\n ");
+//
+//	while (1)
+//	{
+//
+//		printf("\n\r--------------数据发送---------------------\n ");
+//
+//		data_pack();
+//
+//		delay_ms(1000);
+//
+//	}
+//}

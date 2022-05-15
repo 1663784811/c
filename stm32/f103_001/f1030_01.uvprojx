@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CoreSupport;.\Driver\inc;.\STM32F10x;.\USER</IncludePath>
+              <IncludePath>.\CoreSupport;.\Driver\inc;.\STM32F10x;.\USER;.\usart</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -563,11 +563,6 @@
         <Group>
           <GroupName>usart</GroupName>
           <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\usart\main.c</FilePath>
-            </File>
             <File>
               <FileName>com_x.c</FileName>
               <FileType>1</FileType>
