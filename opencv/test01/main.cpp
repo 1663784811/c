@@ -4,7 +4,16 @@
 
 using namespace std;
 using namespace cv;
+/**
+         255   255  255
+ 8位图片：  B     G    R
 
+ 通道：    s:饱和度         h:          v:亮度
+
+
+
+
+ */
 int main() {
 
     //===========================================

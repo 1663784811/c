@@ -4,7 +4,9 @@
 #include "quickDemo.h"
 
 
-
+/**
+ *
+ */
 void QuickDemo::colorSpace_Demo(Mat &image) {
     Mat gray, hsv;
     cvtColor(image, hsv, COLOR_BGR2HSV);
