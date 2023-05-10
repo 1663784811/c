@@ -1,6 +1,11 @@
-#include <iostream>
+#include <opencv2/opencv.hpp>
+using namespace cv;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Mat image = imread("D:\\a.jpg");
+    imshow("Image", image);
+    waitKey(0);
+    destroyAllWindows();
+    printf("ssssssssssssssssss");
     return 0;
 }
