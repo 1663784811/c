@@ -46,6 +46,7 @@ void QuickDemo::pixel_visi_demo(Mat &image) {
     int w = image.cols;
     int h = image.rows;
     int dims = image.channels();
+    imshow("原图", image);
     for (int row = 0; row < h; row++) {
         for (int col = 0; col < w; ++col) {
             if (dims == 1) { // 灰度图像
@@ -61,5 +62,5 @@ void QuickDemo::pixel_visi_demo(Mat &image) {
             }
         }
     }
-    imshow("创建图像", image);
+    imshow("像素操作", image);
 }
