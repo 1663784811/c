@@ -27,7 +27,8 @@ int main() {
     QuickDemo qd;
     //===========================================
 //    qd.colorSpace_Demo(src);
-    qd.mat_creation_demo(src);
+//    qd.mat_creation_demo(src);
+    qd.pixel_visi_demo(src);
 
 
 

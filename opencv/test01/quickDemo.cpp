@@ -39,4 +39,27 @@ void QuickDemo::mat_creation_demo(Mat &image) {
     imshow("创建图像", m3);
 }
 
-
+/**
+ * 像素操作
+ */
+void QuickDemo::pixel_visi_demo(Mat &image) {
+    int w = image.cols;
+    int h = image.rows;
+    int dims = image.channels();
+    for (int row = 0; row < h; row++) {
+        for (int col = 0; col < w; ++col) {
+            if (dims == 1) { // 灰度图像
+                // 获取像素点
+                int pv = image.at<uchar>(row, col);
+                // 操作像素点
+                image.at<uchar>(row, col) = 255 - pv;
+            } else if (dims == 3) { // 彩色图像
+                Vec3b bgr = image.at<Vec3b>(row, col);
+                image.at<Vec3b>(row, col)[0] = 255 - bgr[0];
+                image.at<Vec3b>(row, col)[1] = 255 - bgr[1];
+                image.at<Vec3b>(row, col)[2] = 255 - bgr[2];
+            }
+        }
+    }
+    imshow("创建图像", image);
+}
