@@ -15,19 +15,21 @@ using namespace cv;
 
  */
 int main() {
-
     //===========================================
-//    Mat srcImage = imread("D:\\a.jpg");
-//    if (!srcImage.data) {
+//    Mat src = imread("D:\\a.jpg");
+//    if (!src.data) {
 //        std::cout << "Image not loaded";
 //        return -1;
 //    }
-//    imshow("image", srcImage);
+//    imshow("image", src);
+    //===========================================
+//    QuickDemo qd;
+//    Mat src = imread("D:\\a.jpg");
+//    qd.colorSpace_Demo(src);
     //===========================================
 
-    QuickDemo qd;
-    Mat src = imread("D:\\a.jpg");
-    qd.colorSpace_Demo(src);
+
+
 
 
     //===========================================
