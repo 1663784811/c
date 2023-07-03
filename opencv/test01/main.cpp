@@ -1,6 +1,7 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include "quickDemo.h"
+#include "window/LogWindow.h"
 
 using namespace std;
 using namespace cv;
@@ -16,6 +17,17 @@ using namespace cv;
 
  */
 int main() {
+
+//    LogWindow::init();
+//    // ===========================================
+//
+//    LogWindow::getScreen();
+
+
+    // ===========================================
+
+
+
     Mat src = imread("D:\\a.jpg");
     //===========================================
 //    if (!src.data) {
@@ -26,14 +38,14 @@ int main() {
     //===========================================
     QuickDemo qd;
     //===========================================
-//    qd.colorSpace_Demo(src);
-//    qd.mat_creation_demo(src);
+    qd.colorSpace_Demo(src);
+    qd.mat_creation_demo(src);
     qd.pixel_visi_demo(src);
 
 
 
     //===========================================
     waitKey(0);
-    printf("sssssssssssssssssssssssss");
+    printf("\n\nsssssssssssssssssssssssss");
     return 0;
 }

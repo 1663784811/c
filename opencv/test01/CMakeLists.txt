@@ -13,7 +13,12 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 
 ###############################
-add_executable(test01 main.cpp quickDemo.cpp quickDemo.h)
+add_executable(
+        test01
+        main.cpp
+        quickDemo.cpp quickDemo.h
+        window/LogWindow.cpp window/LogWindow.h
+)
 
 
 
