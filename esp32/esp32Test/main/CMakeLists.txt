@@ -1,5 +1,19 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 idf_component_register(SRCS "esp32Test.c" INCLUDE_DIRS ".")
 
 
