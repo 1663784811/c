@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="s"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="H:/c/c/base/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s">
+				<Option output="H:/c/c/base/cmake-build-release/s.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="H:/c/c/base/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 s"/>
+					<CompileFile command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="s/fast">
+				<Option output="H:/c/c/base/cmake-build-release/s.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="H:/c/c/base/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/c/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 s/fast"/>
+					<CompileFile command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="H:/c/c/base/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="H:/c/c/base/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/c/mingw64/bin/mingw32-make.exe -f &quot;H:/c/c/base/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="H:/c/c/base/main.c">
+			<Option target="s"/>
+		</Unit>
+		<Unit filename="H:/c/c/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

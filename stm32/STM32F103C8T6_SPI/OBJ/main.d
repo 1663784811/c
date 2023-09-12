@@ -16,3 +16,14 @@
 ..\obj\main.o: ..\HARDWARE\LCD\lcd_init.h
 ..\obj\main.o: ..\HARDWARE\LCD\lcd.h
 ..\obj\main.o: ..\HARDWARE\LCD\pic.h
+..\obj\main.o: ..\freertos\include\FreeRTOS.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\main.o: ..\freertos\FreeRTOSConfig.h
+..\obj\main.o: ..\freertos\include\projdefs.h
+..\obj\main.o: ..\freertos\include\portable.h
+..\obj\main.o: ..\freertos\include\deprecated_definitions.h
+..\obj\main.o: ..\freertos\portable\RVDS\ARM_CM3\portmacro.h
+..\obj\main.o: ..\freertos\include\mpu_wrappers.h
+..\obj\main.o: ..\freertos\include\task.h
+..\obj\main.o: ..\freertos\include\list.h
+..\obj\main.o: ..\freertos\include\queue.h
